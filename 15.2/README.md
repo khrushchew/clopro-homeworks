@@ -112,11 +112,6 @@ listener: 51.250.87.131:80 → target_group enp6od7nolccd35t42g6
 Удалена одна ВМ из группы. NLB автоматически исключил её из ротации,
 сайт продолжал отвечать на оставшихся двух ВМ.
 
-```bash
-yc compute instance delete fhmtn5t15jli7a0rssrn
-curl http://51.250.87.131/   # → 200 OK
-```
-
 ![Скриншот 7 — одна ВМ удалена, сайт продолжает работать](screenshots/7_vm_deleted.png)
 
 ---
@@ -124,6 +119,5 @@ curl http://51.250.87.131/   # → 200 OK
 ### 8. Instance Group автоматически восстановила ВМ
 
 Instance Group обнаружила недостаток ВМ и автоматически пересоздала удалённую.
-Через ~4 минуты все 3 ВМ снова в статусе `RUNNING_ACTUAL`.
 
 ![Скриншот 8 — Instance Group автоматически восстановила ВМ](screenshots/8_ig_recovered.png)
