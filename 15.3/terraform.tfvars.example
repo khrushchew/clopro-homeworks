@@ -1,0 +1,6 @@
+yc_token    = "YOUR_IAM_TOKEN_HERE"   # yc iam create-token
+yc_cloud_id  = "b1g03cqd7ovsppviksle"
+yc_folder_id = "b1ggjssjqp3mfsai4u7k"
+yc_zone      = "ru-central1-a"
+bucket_name  = "khrushchew-20261027"
+kms_key_name = "netology-bucket-key"
